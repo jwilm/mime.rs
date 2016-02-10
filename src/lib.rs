@@ -370,7 +370,7 @@ impl serde::ser::Serialize for Mime {
     fn serialize<S>(&self, serializer: &mut S) -> Result<(), S::Error>
         where S: serde::ser::Serializer
     {
-        serializer.visit_str(&*format!("{}",self))
+        serializer.serialize_str(&*format!("{}",self))
     }
 }
 

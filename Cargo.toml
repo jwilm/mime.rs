@@ -11,7 +11,7 @@ keywords = ["mime", "media-extensions", "media-types"]
 
 [dependencies]
 log = "0.3"
-serde = "0.6"
+serde = { git = "https://github.com/serde-rs/serde", rev = "46f88037db239ac87c65081523941db104f56aab" }
 
 [dev_dependencies]
 serde_json = "0.6"
